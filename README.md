@@ -1,11 +1,17 @@
-# Bài tập Make Sidebar
+# Bài tập Fixed Header và Sidebar
 
-Bài tập tạo menu sidebar bằng HTML và CSS theo hướng dẫn CodeGym.
+Giao diện Facebook giản lược bằng HTML và CSS.
+
+## Thành phần
+- Header cố định ở trên cùng (`position: fixed`).
+- Sidebar trái và phải cố định dưới header.
+- Nội dung chính nằm giữa, có khoảng trống tránh header/sidebar.
+- Có media queries để bố cục phù hợp hơn trên màn hình nhỏ.
 
 ## Chạy thử
-1. Giải nén file ZIP.
-2. Mở `index.html` bằng trình duyệt.
-3. Rê chuột vào `Sem 1` hoặc `Sem 2` để hiển thị danh sách môn học con.
+1. Giải nén ZIP.
+2. Mở thư mục trong VS Code.
+3. Mở `index.html` bằng trình duyệt.
 
 ## Nộp bài
-Tải `index.html` và `styles.css` lên repository GitHub, sau đó dán link GitHub vào phần nộp bài trên Internship CodeGym.
+Tải `index.html` và `styles.css` lên GitHub, commit thay đổi, rồi dán link repository hoặc file vào phần nộp bài Internship CodeGym.

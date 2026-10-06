@@ -1,35 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>ACCP i10</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Fixed Header và Sidebar</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h3>ACCP i10</h3>
-<div id="menu">
-    <ul>
-        <li><a href="#">Sem 1</a>
-            <ul>
-                <li><a href="#">Computing Fundametal</a></li>
-                <li><a href="#">C Programming</a></li>
-                <li><a href="#">Building Dynamic Website</a></li>
-                <li><a href="#">MS Transact-SQL</a></li>
-                <li><a href="#">Project</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Sem 2</a>
-            <ul>
-                <li><a href="#">Cloud Computing</a></li>
-                <li><a href="#">APJ - I</a></li>
-                <li><a href="#">APJ - II</a></li>
-                <li><a href="#">APJ - III</a></li>
-                <li><a href="#">eProject</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Sem 3</a></li>
-        <li><a href="#">Sem 4</a></li>
-    </ul>
-</div>
+    <header class="header">
+        <div class="logo">facebook</div>
+        <input class="search" type="search" placeholder="Tìm kiếm trên Facebook">
+        <nav class="header-actions">
+            <a href="#">Trang chủ</a>
+            <a href="#">Bạn bè</a>
+            <a href="#">Thông báo</a>
+        </nav>
+    </header>
+
+    <aside class="sidebar sidebar-left">
+        <h3>Lối tắt</h3>
+        <a href="#">👤 Bạn bè</a>
+        <a href="#">👥 Nhóm</a>
+        <a href="#">🛍 Marketplace</a>
+        <a href="#">🕒 Kỷ niệm</a>
+        <a href="#">🔖 Đã lưu</a>
+    </aside>
+
+    <main class="content">
+        <section class="composer">
+            <h2>Bài viết</h2>
+            <textarea placeholder="Bạn đang nghĩ gì?"></textarea>
+            <button type="button">Đăng</button>
+        </section>
+
+        <article class="post">
+            <div class="post-author">Nguyễn Văn A</div>
+            <p>Chào mọi người! Đây là giao diện Facebook đơn giản dùng để thực hành fixed header và sidebar.</p>
+            <div class="post-image">Ảnh bài viết</div>
+            <div class="post-actions"><a href="#">Thích</a><a href="#">Bình luận</a><a href="#">Chia sẻ</a></div>
+        </article>
+
+        <article class="post">
+            <div class="post-author">Trần Thị B</div>
+            <p>Header luôn nằm ở phía trên cùng khi cuộn trang. Hai sidebar được đặt hai bên phần nội dung chính.</p>
+            <div class="post-actions"><a href="#">Thích</a><a href="#">Bình luận</a><a href="#">Chia sẻ</a></div>
+        </article>
+    </main>
+
+    <aside class="sidebar sidebar-right">
+        <h3>Người liên hệ</h3>
+        <a href="#">🟢 Minh Anh</a>
+        <a href="#">🟢 Hoàng Nam</a>
+        <a href="#">🟢 Thu Hà</a>
+        <a href="#">🟢 Đức Minh</a>
+    </aside>
 </body>
 </html>
