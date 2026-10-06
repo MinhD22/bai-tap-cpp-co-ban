@@ -1,8 +1,50 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib prefix="c" uri="jakarta.tags.core" %>
-<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Quản lý sản phẩm</title><link rel="stylesheet" href="${pageContext.request.contextPath}/assets/style.css"></head><body><main class="container">
-<header class="header"><div><h1>Quản lý sản phẩm</h1><p>Java Web MVC2 — Servlet, JSP và Service</p></div><a class="btn primary" href="${pageContext.request.contextPath}/products?action=new">+ Thêm sản phẩm</a></header>
-<form class="search" method="get" action="${pageContext.request.contextPath}/products"><input type="hidden" name="action" value="search"><input name="keyword" placeholder="Nhập tên sản phẩm cần tìm..." value="<c:out value='${keyword}'/>"><button class="btn">Tìm kiếm</button><a class="btn" href="${pageContext.request.contextPath}/products">Xóa lọc</a></form>
-<div class="table-wrap"><table><thead><tr><th>ID</th><th>Tên sản phẩm</th><th>Giá (VNĐ)</th><th>Số lượng</th><th>Mô tả</th><th>Thao tác</th></tr></thead><tbody>
-<c:forEach var="item" items="${products}"><tr><td><c:out value="${item.id}"/></td><td><b><c:out value="${item.name}"/></b></td><td><c:out value="${item.price}"/></td><td><c:out value="${item.quantity}"/></td><td><c:out value="${item.description}"/></td><td class="actions"><a href="${pageContext.request.contextPath}/products?action=detail&id=${item.id}">Chi tiết</a> <a href="${pageContext.request.contextPath}/products?action=edit&id=${item.id}">Sửa</a> <a class="danger" href="${pageContext.request.contextPath}/products?action=delete&id=${item.id}" onclick="return confirm('Bạn có chắc muốn xóa?')">Xóa</a></td></tr></c:forEach>
-<c:if test="${empty products}"><tr><td colspan="6" class="empty">Không tìm thấy sản phẩm.</td></tr></c:if></tbody></table></div><p class="hint">Dữ liệu mẫu lưu trong bộ nhớ và được đặt lại khi khởi động lại server.</p></main></body></html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý sản phẩm</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+        th { background-color: #f2f2f2; }
+        a { text-decoration: none; padding: 5px 10px; color: white; background: #007bff; border-radius: 3px; }
+        a.delete { background: #dc3545; }
+        .btn-add { margin-bottom: 15px; display: inline-block; }
+    </style>
+    <script>
+        function confirmDelete(id) {
+            if (confirm("Bạn có chắc chắn muốn xóa sản phẩm này không?")) {
+                window.location.href = 'delete?id=' + id;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Danh sách sản phẩm</h2>
+    <a href="new" class="btn-add">Thêm sản phẩm mới</a>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Tên sản phẩm</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Hành động</th>
+        </tr>
+        <c:forEach var="product" items="${listProduct}">
+            <tr>
+                <td><c:out value="${product.id}" /></td>
+                <td><c:out value="${product.name}" /></td>
+                <td><c:out value="${product.price}" /></td>
+                <td><c:out value="${product.quantity}" /></td>
+                <td>
+                    <a href="edit?id=<c:out value='${product.id}' />">Sửa</a>
+                    <a href="javascript:void(0);" class="delete" onclick="confirmDelete(<c:out value='${product.id}' />)">Xóa</a>
+                </td>
+            </tr>
+        </c:forEach>
+    </table>
+</body>
+</html>
