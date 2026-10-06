@@ -1,9 +1,11 @@
-# Bài tập sử dụng Box Model
+# Bài tập Make Sidebar
 
-## Cách chạy
-1. Giải nén thư mục.
-2. Mở `index.html` bằng trình duyệt hoặc mở thư mục bằng VS Code.
-3. Nội dung CSS sử dụng `border`, `background` (theo hướng dẫn bài có thể bổ sung nếu cần), `padding` và `margin` để minh họa Box Model.
+Bài tập tạo menu sidebar bằng HTML và CSS theo hướng dẫn CodeGym.
+
+## Chạy thử
+1. Giải nén file ZIP.
+2. Mở `index.html` bằng trình duyệt.
+3. Rê chuột vào `Sem 1` hoặc `Sem 2` để hiển thị danh sách môn học con.
 
 ## Nộp bài
-Đẩy file `index.html` lên repository GitHub rồi dán link repository/file vào phần nộp bài trên Internship CodeGym.
+Tải `index.html` và `styles.css` lên repository GitHub, sau đó dán link GitHub vào phần nộp bài trên Internship CodeGym.
