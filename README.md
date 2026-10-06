@@ -1,9 +1,11 @@
-# Bài tập nhúng CSS
+# Bài tập định dạng văn bản bằng CSS
 
-## Mục đích
-Luyện tập việc nhúng CSS vào trang web bằng các cách khác nhau.
-
-## Nội dung
-- Phần 1: Inline-style — `inline.html`
-- Phần 2: Internal-style — `internal.html`
-- Phần 3: External-style — `external.html` kết hợp `style.css`
+Bài tập sử dụng các thuộc tính CSS:
+- font-style
+- text-align
+- font-size
+- text-indent
+- color
+- font-family
+- font-weight
+- line-height
