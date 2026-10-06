@@ -1,0 +1,3 @@
+# Giải trình lựa chọn layout
+
+Flexbox phù hợp với Navbar vì đây là bố cục một chiều: logo, liên kết và nút hồ sơ cần căn hàng, phân phối khoảng cách theo nội dung và thích ứng khi màn hình hẹp. CSS Grid phù hợp với Dashboard vì đây là bố cục hai chiều; widget có thể chiếm nhiều cột hoặc hàng bằng `grid-column` và `grid-row` mà không cần nhiều lớp `div` lồng nhau. Với Pricing, Bootstrap Grid cung cấp sẵn hệ thống 12 cột responsive: `col-12 col-md-4` xếp thẻ thành một cột trên màn hình nhỏ và ba cột từ breakpoint `md`. Kết hợp các công cụ giúp mã dễ đọc, dễ bảo trì và kiểm thử responsive hơn. Thuộc tính `gap` tạo khoảng cách nhất quán thay cho nhiều margin rời rạc.
