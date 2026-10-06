@@ -1,72 +1,46 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang đọc truyện</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Sử dụng Boxmodel</title>
+
+    <style>
+        .boxmodel {
+            margin: 0 auto;
+            width: 800px;
+            border: 10px;
+            padding: 10px;
+            border-color: chartreuse aqua blue blueviolet;
+            border-style: solid;
+        }
+
+        .boxmodel p {
+            border: 3px dotted darkred;
+            padding: 10px;
+        }
+
+        #boxmodel1 {
+            margin-bottom: 20px;
+        }
+
+        #boxmodel2 {
+            margin-bottom: 40px;
+        }
+
+        #boxmodel3 {
+            margin-bottom: 60px;
+        }
+    </style>
 </head>
+
 <body>
-
-<header>
-    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1200&q=80"
-         alt="Ảnh truyện" class="story-image">
-
-    <h1>Trang Đọc Truyện</h1>
-    <p class="intro">Thư viện truyện đơn giản</p>
-</header>
-
-<nav class="toc">
-    <h2>Mục lục truyện</h2>
-    <h5><a href="#truyen1">Truyện 1: Chiếc Lá Cuối Cùng</a></h5>
-    <h5><a href="#truyen2">Truyện 2: Người Bạn Nhỏ</a></h5>
-    <h5><a href="#truyen3">Truyện 3: Hành Trình Ước Mơ</a></h5>
-</nav>
-
-<main>
-    <section id="truyen1" class="story">
-        <h2>Truyện 1: Chiếc Lá Cuối Cùng</h2>
-        <p>
-            Trong một căn phòng nhỏ, một cô gái trẻ nằm bên cửa sổ và nhìn những chiếc lá
-            cuối cùng trên cây. Cô tin rằng khi chiếc lá cuối cùng rơi xuống, hy vọng của
-            mình cũng sẽ biến mất.
-        </p>
-        <p>
-            Nhưng chiếc lá vẫn ở đó sau một đêm mưa gió. Nhìn thấy chiếc lá kiên cường,
-            cô dần lấy lại niềm tin và quyết tâm vượt qua khó khăn. Đôi khi, một điều nhỏ
-            bé cũng có thể mang đến cho con người sức mạnh rất lớn.
-        </p>
-        <a href="#top">↑ Về đầu trang</a>
-    </section>
-
-    <section id="truyen2" class="story">
-        <h2>Truyện 2: Người Bạn Nhỏ</h2>
-        <p>
-            Một cậu bé thường ngồi một mình trong công viên sau giờ học. Một ngày nọ,
-            cậu gặp một chú chó nhỏ bị lạc. Cậu đưa chú chó về nhà và chăm sóc nó.
-        </p>
-        <p>
-            Từ đó, mỗi buổi chiều hai người bạn cùng nhau đi dạo. Cậu bé nhận ra rằng
-            tình bạn không cần bắt đầu bằng những điều lớn lao, chỉ cần sự quan tâm và
-            chân thành.
-        </p>
-        <a href="#top">↑ Về đầu trang</a>
-    </section>
-
-    <section id="truyen3" class="story">
-        <h2>Truyện 3: Hành Trình Ước Mơ</h2>
-        <p>
-            Minh luôn mơ ước trở thành một lập trình viên. Ban đầu, những dòng mã khiến
-            cậu cảm thấy khó hiểu và nhiều lần cậu muốn bỏ cuộc.
-        </p>
-        <p>
-            Tuy nhiên, Minh kiên trì học từng ngày. Mỗi lỗi sai giúp cậu hiểu thêm một
-            điều mới. Sau một thời gian, cậu đã tự tạo được trang web đầu tiên của mình.
-            Cậu hiểu rằng ước mơ sẽ đến gần hơn nếu mỗi ngày đều cố gắng một chút.
-        </p>
-        <a href="#top">↑ Về đầu trang</a>
-    </section>
-</main>
-
+    <div class="boxmodel">
+        <p id="boxmodel1">Mô hình hộp trong CSS về cơ bản là một hộp bao quanh phần tử HTML.
+            Nó bao gồm: lề (margin), viền (border), phần đệm (padding) và nội dung (content)</p>
+        <p id="boxmodel2">Mô hình hộp trong CSS về cơ bản là một hộp bao quanh phần tử HTML.
+            Nó bao gồm: lề (margin), viền (border), phần đệm (padding) và nội dung (content)</p>
+        <p id="boxmodel3">Mô hình hộp trong CSS về cơ bản là một hộp bao quanh phần tử HTML.
+            Nó bao gồm: lề (margin), viền (border), phần đệm (padding) và nội dung (content)</p>
+    </div>
 </body>
 </html>

@@ -1,11 +1,9 @@
-# Bài tập Web đọc truyện
+# Bài tập sử dụng Box Model
 
-Bài tập luyện tập:
-- Nhúng CSS bằng file `styles.css` với thẻ `<link>`.
-- Tạo mục lục truyện.
-- Liên kết từng mục lục đến nội dung tương ứng bằng `id` và `href`.
-- Sử dụng thẻ `<h5>` cho từng mục lục.
-- Định dạng `font-family`, `font-size`, `color`, `text-align`.
-- Định dạng khối mục lục bằng `border`, `background-color`, `padding`.
-- Tạo hiệu ứng `:hover` và `text-decoration`.
-- Định dạng nội dung truyện bằng `line-height`, `text-align`, `text-indent`.
+## Cách chạy
+1. Giải nén thư mục.
+2. Mở `index.html` bằng trình duyệt hoặc mở thư mục bằng VS Code.
+3. Nội dung CSS sử dụng `border`, `background` (theo hướng dẫn bài có thể bổ sung nếu cần), `padding` và `margin` để minh họa Box Model.
+
+## Nộp bài
+Đẩy file `index.html` lên repository GitHub rồi dán link repository/file vào phần nộp bài trên Internship CodeGym.
