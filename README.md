@@ -1,17 +1,17 @@
-# Bài tập Fixed Header và Sidebar
+# Surface Landing Page — bài thực hành Bootstrap
 
-Giao diện Facebook giản lược bằng HTML và CSS.
+## Chạy bài
+1. Giải nén thư mục.
+2. Mở `index.html` bằng VS Code.
+3. Chọn **Open with Live Server** hoặc mở trực tiếp bằng trình duyệt.
+4. Cần kết nối Internet để tải Bootstrap 5 từ CDN và tải ảnh minh họa.
 
-## Thành phần
-- Header cố định ở trên cùng (`position: fixed`).
-- Sidebar trái và phải cố định dưới header.
-- Nội dung chính nằm giữa, có khoảng trống tránh header/sidebar.
-- Có media queries để bố cục phù hợp hơn trên màn hình nhỏ.
+## Thành phần Bootstrap đã sử dụng
+- `navbar`, `navbar-expand-lg`, `navbar-toggler`, `collapse`
+- `container`, `row`, `col-*`, `row-cols-*`, `g-*`
+- `card`, `card-body`, `badge`, `btn`
+- `d-flex`, `flex-wrap`, `align-items-center`, `justify-content-between`
+- `text-*`, `bg-*`, `py-*`, `px-*`
 
-## Chạy thử
-1. Giải nén ZIP.
-2. Mở thư mục trong VS Code.
-3. Mở `index.html` bằng trình duyệt.
-
-## Nộp bài
-Tải `index.html` và `styles.css` lên GitHub, commit thay đổi, rồi dán link repository hoặc file vào phần nộp bài Internship CodeGym.
+## Ghi chú
+Bản này là giao diện thực hành lấy cảm hứng từ trang cửa hàng Surface, sử dụng ảnh minh họa từ Unsplash. Nếu bài yêu cầu bắt buộc dùng đúng hình ảnh của bản offline CodeGym cung cấp, hãy tải ZIP đó từ CodeGym rồi thay các ảnh trong HTML bằng ảnh tương ứng từ bản offline.
