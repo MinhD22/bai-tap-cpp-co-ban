@@ -1,17 +1,23 @@
-# Surface Landing Page — bài thực hành Bootstrap
+# JSP/Servlet Currency Converter
 
-## Chạy bài
-1. Giải nén thư mục.
-2. Mở `index.html` bằng VS Code.
-3. Chọn **Open with Live Server** hoặc mở trực tiếp bằng trình duyệt.
-4. Cần kết nối Internet để tải Bootstrap 5 từ CDN và tải ảnh minh họa.
+Bài tập Java Web dùng Maven, JSP, Servlet và Jakarta Servlet API, tương thích Apache Tomcat 10.1+.
 
-## Thành phần Bootstrap đã sử dụng
-- `navbar`, `navbar-expand-lg`, `navbar-toggler`, `collapse`
-- `container`, `row`, `col-*`, `row-cols-*`, `g-*`
-- `card`, `card-body`, `badge`, `btn`
-- `d-flex`, `flex-wrap`, `align-items-center`, `justify-content-between`
-- `text-*`, `bg-*`, `py-*`, `px-*`
+## Yêu cầu
+- JDK 17+
+- Maven
+- Apache Tomcat 10.1+
 
-## Ghi chú
-Bản này là giao diện thực hành lấy cảm hứng từ trang cửa hàng Surface, sử dụng ảnh minh họa từ Unsplash. Nếu bài yêu cầu bắt buộc dùng đúng hình ảnh của bản offline CodeGym cung cấp, hãy tải ZIP đó từ CodeGym rồi thay các ảnh trong HTML bằng ảnh tương ứng từ bản offline.
+## Cấu trúc
+- `pom.xml`: cấu hình Maven
+- `src/main/java/com/codegym/ConverterServlet.java`: xử lý POST `/convert`
+- `src/main/webapp/index.jsp`: form nhập tỉ giá và lượng USD
+- `src/main/webapp/WEB-INF/web.xml`: cấu hình ứng dụng
+
+## Chạy
+1. Mở terminal tại thư mục có `pom.xml`.
+2. Chạy `mvn clean package`.
+3. File WAR được tạo ở `target/jsp-servlet-currency-converter.war` khi BUILD SUCCESS.
+4. Sao chép WAR vào `webapps` của Tomcat 10.1+ và khởi động Tomcat.
+5. Truy cập `http://localhost:8080/jsp-servlet-currency-converter/`.
+
+Không tải thư mục `target/` lên GitHub; tải mã nguồn và cấu hình dự án.
