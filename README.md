@@ -1,23 +1,24 @@
-# JSP/Servlet Currency Converter
+# Quản lý sản phẩm — Java Web MVC2
 
-Bài tập Java Web dùng Maven, JSP, Servlet và Jakarta Servlet API, tương thích Apache Tomcat 10.1+.
-
-## Yêu cầu
-- JDK 17+
-- Maven
-- Apache Tomcat 10.1+
-
-## Cấu trúc
-- `pom.xml`: cấu hình Maven
-- `src/main/java/com/codegym/ConverterServlet.java`: xử lý POST `/convert`
-- `src/main/webapp/index.jsp`: form nhập tỉ giá và lượng USD
-- `src/main/webapp/WEB-INF/web.xml`: cấu hình ứng dụng
+Dự án mẫu gồm Product, ProductService, ProductServiceImpl, ProductServlet và JSP cho danh sách, thêm, sửa, xóa, chi tiết, tìm kiếm.
 
 ## Chạy
-1. Mở terminal tại thư mục có `pom.xml`.
-2. Chạy `mvn clean package`.
-3. File WAR được tạo ở `target/jsp-servlet-currency-converter.war` khi BUILD SUCCESS.
-4. Sao chép WAR vào `webapps` của Tomcat 10.1+ và khởi động Tomcat.
-5. Truy cập `http://localhost:8080/jsp-servlet-currency-converter/`.
+- Cần JDK 11+, Maven và Apache Tomcat 10+.
+- Mở thư mục này bằng IntelliJ IDEA/Eclipse dưới dạng Maven project.
+- Chạy `mvn clean package`.
+- Chép `target/quan-ly-san-pham-mvc2.war` vào `webapps` của Tomcat.
+- Mở `http://localhost:8080/quan-ly-san-pham-mvc2/products`.
 
-Không tải thư mục `target/` lên GitHub; tải mã nguồn và cấu hình dự án.
+Dữ liệu mẫu được lưu trong bộ nhớ, không cần database; khi restart server dữ liệu sẽ trở về ban đầu.
+
+## Nộp GitHub
+Tạo repository mới, giải nén ZIP rồi chạy trong thư mục dự án:
+```
+git init
+git add .
+git commit -m "Hoan thanh bai tap Java Web MVC2"
+git branch -M main
+git remote add origin https://github.com/TEN_TAI_KHOAN/quan-ly-san-pham-mvc2.git
+git push -u origin main
+```
+Thay `TEN_TAI_KHOAN` bằng tài khoản GitHub của bạn và nộp link repository thật.
