@@ -1,5 +1,9 @@
-# Bài tập CSS
+# Bài tập nhúng CSS
 
-Bài thực hành CSS theo hướng dẫn CodeGym.
+## Mục đích
+Luyện tập việc nhúng CSS vào trang web bằng các cách khác nhau.
 
-File chính: index.html
+## Nội dung
+- Phần 1: Inline-style — `inline.html`
+- Phần 2: Internal-style — `internal.html`
+- Phần 3: External-style — `external.html` kết hợp `style.css`
