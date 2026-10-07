@@ -1,94 +1,113 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thực hành CSS danh sách</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Dropdown Dọc</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f3f4f6;
+    }
+
+    h1 {
+      margin: 0 0 24px;
+      color: #222;
+      font-size: 24px;
+    }
+
+    #menu,
+    #menu ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    #menu {
+      width: 160px;
+    }
+
+    #menu li {
+      position: relative;
+      width: 160px;
+      height: 36px;
+      padding: 0 20px;
+      background-color: #111;
+      line-height: 36px;
+      cursor: pointer;
+    }
+
+    #menu li:hover {
+      background-color: #333;
+    }
+
+    #menu a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    #menu ul ul {
+      position: absolute;
+      top: 0;
+      left: 160px;
+      visibility: hidden;
+      z-index: 10;
+    }
+
+    #menu li:hover > ul {
+      visibility: visible;
+    }
+
+    #menu li:focus-within > ul {
+      visibility: visible;
+    }
+
+    .note {
+      margin-top: 24px;
+      color: #555;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <main class="container">
-        <h1>Thực hành CSS với danh sách</h1>
+  <h1>Menu Dropdown Dọc</h1>
 
-        <section class="card">
-            <h2>1. Danh sách môn học (square)</h2>
-            <ul class="subjects">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Git</li>
+  <div id="menu">
+    <ul>
+      <li><a href="#">Trang chủ</a></li>
+      <li>
+        <a href="#">Sản phẩm ▸</a>
+        <ul>
+          <li><a href="#">Laptop</a></li>
+          <li>
+            <a href="#">Điện thoại ▸</a>
+            <ul>
+              <li><a href="#">Android</a></li>
+              <li><a href="#">iPhone</a></li>
             </ul>
-        </section>
+          </li>
+          <li><a href="#">Phụ kiện</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Dịch vụ ▸</a>
+        <ul>
+          <li><a href="#">Bảo hành</a></li>
+          <li><a href="#">Sửa chữa</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Liên hệ</a></li>
+    </ul>
+  </div>
 
-        <section class="card">
-            <h2>2. Lộ trình học (số La Mã viết hoa)</h2>
-            <ol class="roadmap">
-                <li>Học HTML</li>
-                <li>Học CSS</li>
-                <li>Học JavaScript</li>
-                <li>Học Git</li>
-            </ol>
-        </section>
-
-        <section class="card">
-            <h2>3. Công cụ học tập (hình ảnh làm dấu)</h2>
-            <ul class="tools">
-                <li>Visual Studio Code</li>
-                <li>Google Chrome</li>
-                <li>GitHub</li>
-                <li>Git</li>
-            </ul>
-        </section>
-
-        <section class="card">
-            <h2>4. So sánh vị trí dấu đánh dấu</h2>
-            <div class="comparison">
-                <div>
-                    <h3>Outside</h3>
-                    <ul class="outside">
-                        <li>HTML và CSS là nền tảng để xây dựng giao diện trang web.</li>
-                        <li>JavaScript giúp trang web có tính tương tác.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Inside</h3>
-                    <ul class="inside">
-                        <li>HTML và CSS là nền tảng để xây dựng giao diện trang web.</li>
-                        <li>JavaScript giúp trang web có tính tương tác.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="card">
-            <h2>5. Thuộc tính rút gọn list-style</h2>
-            <ul class="shorthand">
-                <li>Đọc yêu cầu bài tập</li>
-                <li>Viết HTML</li>
-                <li>Định kiểu bằng CSS</li>
-            </ul>
-        </section>
-
-        <section class="card">
-            <h2>6. Danh sách ngôn ngữ lập trình</h2>
-            <ul class="languages">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-            </ul>
-        </section>
-
-        <section class="card">
-            <h2>7. Lộ trình học lập trình Web</h2>
-            <ol class="web-roadmap">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Git</li>
-                <li>GitHub</li>
-            </ol>
-        </section>
-    </main>
+  <p class="note">Di chuột vào “Sản phẩm” hoặc “Dịch vụ” để xem menu con.</p>
 </body>
 </html>

@@ -1,19 +1,18 @@
-# My New Project
+# Menu Dropdown Dọc (HTML + CSS)
 
-Đây là dự án thực hành Git và GitHub.
+## Cách chạy
+1. Tải `index.html` về máy.
+2. Mở file bằng trình duyệt Chrome, Edge hoặc Firefox.
+3. Di chuột vào **Sản phẩm** hoặc **Dịch vụ** để xem menu con.
 
-## Mục tiêu
-- Làm quen với các lệnh Git cơ bản.
-- Quản lý mã nguồn bằng Git.
-- Đồng bộ dự án từ máy tính lên GitHub.
+## Đăng lên GitHub
+1. Tạo repository mới trên GitHub, ví dụ `menu-dropdown`.
+2. Chọn **Add file → Upload files**.
+3. Tải `index.html` lên và nhấn **Commit changes**.
+4. Sao chép URL repository để dán vào phần nộp bài.
 
-## Các lệnh đã sử dụng
-- `git init`: Khởi tạo Local Repository.
-- `git remote add origin URL`: Kết nối Local Repository với Repository trên GitHub.
-- `git add README.md`: Đưa README.md vào vùng staging.
-- `git commit -m "Add README.md file"`: Lưu thay đổi thành một commit.
-- `git branch -M main`: Đặt tên nhánh hiện tại là `main`.
-- `git push -u origin main`: Đẩy commit lên GitHub và thiết lập nhánh theo dõi.
-
-## Tác giả
-Học viên thực hành Git và GitHub.
+## Đăng lên CodePen
+1. Mở https://codepen.io/pen/
+2. Sao chép phần trong thẻ `<body>` vào ô HTML.
+3. Sao chép phần trong thẻ `<style>` vào ô CSS.
+4. Nhấn **Save** và sao chép link CodePen.
