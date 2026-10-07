@@ -1,147 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Surface | Microsoft Store</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành CSS danh sách</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Thanh điều hướng Bootstrap -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
-    <div class="container-fluid px-lg-5">
-      <a class="navbar-brand fw-semibold" href="#">Microsoft</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-        aria-controls="mainNav" aria-expanded="false" aria-label="Mở menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="#">Surface</a></li>
-          <li class="nav-item"><a class="nav-link" href="#devices">Máy tính</a></li>
-          <li class="nav-item"><a class="nav-link" href="#accessories">Phụ kiện</a></li>
-          <li class="nav-item"><a class="nav-link" href="#support">Hỗ trợ</a></li>
-        </ul>
-        <div class="d-flex gap-3 align-items-center">
-          <a class="nav-link" href="#deals">Ưu đãi</a>
-          <a class="btn btn-primary btn-sm px-3" href="#devices">Mua Surface</a>
-        </div>
-      </div>
-    </div>
-  </nav>
+    <main class="container">
+        <h1>Thực hành CSS với danh sách</h1>
 
-  <!-- Hero -->
-  <header class="hero-section">
-    <div class="container py-5">
-      <div class="row align-items-center g-4 py-lg-4">
-        <div class="col-lg-5">
-          <p class="text-uppercase small fw-bold text-primary mb-2">Microsoft Surface</p>
-          <h1 class="display-4 fw-semibold mb-3">Meet the Surface family</h1>
-          <p class="lead mb-4">Thiết bị Surface kết hợp thiết kế tinh tế, hiệu năng mạnh mẽ và trải nghiệm linh hoạt cho công việc, học tập và sáng tạo.</p>
-          <div class="d-flex flex-wrap gap-2">
-            <a class="btn btn-primary btn-lg" href="#devices">Khám phá thiết bị</a>
-            <a class="btn btn-outline-dark btn-lg" href="#deals">Xem ưu đãi</a>
-          </div>
-        </div>
-        <div class="col-lg-7">
-          <img class="img-fluid hero-image" src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1400&q=85" alt="Thiết bị máy tính xách tay trên bàn làm việc">
-        </div>
-      </div>
-    </div>
-  </header>
+        <section class="card">
+            <h2>1. Danh sách môn học (square)</h2>
+            <ul class="subjects">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+            </ul>
+        </section>
 
-  <!-- Liên kết nhanh -->
-  <section class="container py-4">
-    <div class="row row-cols-2 row-cols-md-4 g-3 text-center">
-      <div class="col"><a class="quick-link" href="#laptops"> <span class="quick-icon">▱</span><span>Surface laptops</span></a></div>
-      <div class="col"><a class="quick-link" href="#tablets"><span class="quick-icon">▣</span><span>Surface tablets</span></a></div>
-      <div class="col"><a class="quick-link" href="#accessories"><span class="quick-icon">⌨</span><span>Phụ kiện</span></a></div>
-      <div class="col"><a class="quick-link" href="#deals"><span class="quick-icon">％</span><span>Ưu đãi Surface</span></a></div>
-    </div>
-  </section>
+        <section class="card">
+            <h2>2. Lộ trình học (số La Mã viết hoa)</h2>
+            <ol class="roadmap">
+                <li>Học HTML</li>
+                <li>Học CSS</li>
+                <li>Học JavaScript</li>
+                <li>Học Git</li>
+            </ol>
+        </section>
 
-  <!-- Sản phẩm nổi bật -->
-  <section class="container py-5" id="devices">
-    <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
-      <div><p class="text-primary fw-bold small text-uppercase mb-1">Tìm thiết bị phù hợp</p><h2 class="fw-semibold mb-0">Khám phá Surface</h2></div>
-      <a href="#deals" class="link-primary">Xem tất cả ưu đãi →</a>
-    </div>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
-      <div class="col" id="laptops">
-        <article class="card product-card h-100">
-          <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80" class="card-img-top product-img" alt="Laptop mỏng nhẹ">
-          <div class="card-body d-flex flex-column">
-            <span class="badge text-bg-primary align-self-start mb-2">Nổi bật</span>
-            <h3 class="h5 card-title">Surface Laptop</h3>
-            <p class="card-text">Thiết kế thanh lịch, phù hợp cho học tập và làm việc mỗi ngày.</p>
-            <a href="#deals" class="btn btn-outline-primary mt-auto align-self-start">Tìm hiểu thêm</a>
-          </div>
-        </article>
-      </div>
-      <div class="col" id="tablets">
-        <article class="card product-card h-100">
-          <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=900&q=80" class="card-img-top product-img" alt="Máy tính bảng">
-          <div class="card-body d-flex flex-column">
-            <h3 class="h5 card-title">Surface Pro</h3>
-            <p class="card-text">Tính linh hoạt của máy tính bảng cùng khả năng làm việc như laptop.</p>
-            <a href="#deals" class="btn btn-outline-primary mt-auto align-self-start">Tìm hiểu thêm</a>
-          </div>
-        </article>
-      </div>
-      <div class="col" id="accessories">
-        <article class="card product-card h-100">
-          <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=80" class="card-img-top product-img" alt="Bàn phím và phụ kiện máy tính">
-          <div class="card-body d-flex flex-column">
-            <h3 class="h5 card-title">Phụ kiện Surface</h3>
-            <p class="card-text">Hoàn thiện trải nghiệm với bàn phím, chuột và phụ kiện tương thích.</p>
-            <a href="#deals" class="btn btn-outline-primary mt-auto align-self-start">Mua phụ kiện</a>
-          </div>
-        </article>
-      </div>
-      <div class="col" id="deals">
-        <article class="card product-card h-100">
-          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80" class="card-img-top product-img" alt="Laptop trên bàn làm việc">
-          <div class="card-body d-flex flex-column">
-            <span class="badge text-bg-success align-self-start mb-2">Ưu đãi</span>
-            <h3 class="h5 card-title">Ưu đãi Surface</h3>
-            <p class="card-text">Khám phá các lựa chọn thiết bị và chương trình ưu đãi hiện có.</p>
-            <a href="#support" class="btn btn-outline-primary mt-auto align-self-start">Xem ưu đãi</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+        <section class="card">
+            <h2>3. Công cụ học tập (hình ảnh làm dấu)</h2>
+            <ul class="tools">
+                <li>Visual Studio Code</li>
+                <li>Google Chrome</li>
+                <li>GitHub</li>
+                <li>Git</li>
+            </ul>
+        </section>
 
-  <!-- Banner phụ -->
-  <section class="feature-band py-5">
-    <div class="container">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-6">
-          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" class="img-fluid rounded-3" alt="Không gian làm việc hiện đại">
-        </div>
-        <div class="col-lg-6">
-          <p class="text-primary fw-bold small text-uppercase mb-2">Làm việc theo cách của bạn</p>
-          <h2 class="display-6 fw-semibold">Một thiết bị. Nhiều khả năng.</h2>
-          <p class="lead">Từ ghi chú, học trực tuyến đến sáng tạo nội dung, hãy chọn cấu hình phù hợp với nhu cầu của bạn.</p>
-          <a class="btn btn-dark" href="#devices">Chọn Surface của bạn</a>
-        </div>
-      </div>
-    </div>
-  </section>
+        <section class="card">
+            <h2>4. So sánh vị trí dấu đánh dấu</h2>
+            <div class="comparison">
+                <div>
+                    <h3>Outside</h3>
+                    <ul class="outside">
+                        <li>HTML và CSS là nền tảng để xây dựng giao diện trang web.</li>
+                        <li>JavaScript giúp trang web có tính tương tác.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Inside</h3>
+                    <ul class="inside">
+                        <li>HTML và CSS là nền tảng để xây dựng giao diện trang web.</li>
+                        <li>JavaScript giúp trang web có tính tương tác.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-  <footer class="bg-dark text-white py-4" id="support">
-    <div class="container">
-      <div class="row g-3 align-items-center">
-        <div class="col-md"><strong>Microsoft Surface</strong><p class="small text-white-50 mb-0">Giao diện thực hành Bootstrap</p></div>
-        <div class="col-md-auto"><a class="footer-link" href="#devices">Sản phẩm</a></div>
-        <div class="col-md-auto"><a class="footer-link" href="#accessories">Phụ kiện</a></div>
-        <div class="col-md-auto"><a class="footer-link" href="#support">Hỗ trợ</a></div>
-        <div class="col-12"><hr class="border-secondary"><p class="small text-white-50 mb-0">© 2026 MetricsHub learning exercise — giao diện minh họa.</p></div>
-      </div>
-    </div>
-  </footer>
+        <section class="card">
+            <h2>5. Thuộc tính rút gọn list-style</h2>
+            <ul class="shorthand">
+                <li>Đọc yêu cầu bài tập</li>
+                <li>Viết HTML</li>
+                <li>Định kiểu bằng CSS</li>
+            </ul>
+        </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <section class="card">
+            <h2>6. Danh sách ngôn ngữ lập trình</h2>
+            <ul class="languages">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>7. Lộ trình học lập trình Web</h2>
+            <ol class="web-roadmap">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+                <li>GitHub</li>
+            </ol>
+        </section>
+    </main>
 </body>
 </html>
