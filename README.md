@@ -1,24 +1,19 @@
-# Quản lý sản phẩm — Java Web MVC2
+# My New Project
 
-Dự án mẫu gồm Product, ProductService, ProductServiceImpl, ProductServlet và JSP cho danh sách, thêm, sửa, xóa, chi tiết, tìm kiếm.
+Đây là dự án thực hành Git và GitHub.
 
-## Chạy
-- Cần JDK 11+, Maven và Apache Tomcat 10+.
-- Mở thư mục này bằng IntelliJ IDEA/Eclipse dưới dạng Maven project.
-- Chạy `mvn clean package`.
-- Chép `target/quan-ly-san-pham-mvc2.war` vào `webapps` của Tomcat.
-- Mở `http://localhost:8080/quan-ly-san-pham-mvc2/products`.
+## Mục tiêu
+- Làm quen với các lệnh Git cơ bản.
+- Quản lý mã nguồn bằng Git.
+- Đồng bộ dự án từ máy tính lên GitHub.
 
-Dữ liệu mẫu được lưu trong bộ nhớ, không cần database; khi restart server dữ liệu sẽ trở về ban đầu.
+## Các lệnh đã sử dụng
+- `git init`: Khởi tạo Local Repository.
+- `git remote add origin URL`: Kết nối Local Repository với Repository trên GitHub.
+- `git add README.md`: Đưa README.md vào vùng staging.
+- `git commit -m "Add README.md file"`: Lưu thay đổi thành một commit.
+- `git branch -M main`: Đặt tên nhánh hiện tại là `main`.
+- `git push -u origin main`: Đẩy commit lên GitHub và thiết lập nhánh theo dõi.
 
-## Nộp GitHub
-Tạo repository mới, giải nén ZIP rồi chạy trong thư mục dự án:
-```
-git init
-git add .
-git commit -m "Hoan thanh bai tap Java Web MVC2"
-git branch -M main
-git remote add origin https://github.com/TEN_TAI_KHOAN/quan-ly-san-pham-mvc2.git
-git push -u origin main
-```
-Thay `TEN_TAI_KHOAN` bằng tài khoản GitHub của bạn và nộp link repository thật.
+## Tác giả
+Học viên thực hành Git và GitHub.
