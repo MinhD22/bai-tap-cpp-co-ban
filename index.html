@@ -3,44 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Grid Layout</title>
+    <title>Thực hành flex-grow</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1>Header</h1>
-            <p>Trang web sử dụng CSS Grid</p>
-        </header>
+    <main class="page">
+        <h1>Thực hành thuộc tính flex-grow</h1>
+        <p>Flex Item số 2 có <code>flex-grow: 1</code> nên nhận thêm phần không gian còn trống.</p>
 
-        <nav class="sidebar" aria-label="Menu phụ">
-            <h2>Sidebar</h2>
-            <ul>
-                <li><a href="#home">Trang chủ</a></li>
-                <li><a href="#news">Tin tức</a></li>
-                <li><a href="#services">Dịch vụ</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
-            </ul>
-        </nav>
+        <section class="flex-container" aria-label="Ví dụ flex-grow gồm 5 item">
+            <div class="item">Item 1</div>
+            <div class="item item-grow">Item 2<br><small>flex-grow: 1</small></div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+        </section>
 
-        <main class="content" id="home">
-            <h2>Nội dung chính</h2>
-            <p>Đây là khu vực nội dung chính của trang web. CSS Grid giúp sắp xếp Header, Sidebar, Main Content và Footer thành bố cục rõ ràng.</p>
-
-            <section id="news">
-                <h3>Tin tức mới</h3>
-                <p>Bạn có thể đặt bài viết, hình ảnh hoặc thông tin quan trọng tại khu vực này.</p>
-            </section>
-
-            <section id="services">
-                <h3>Dịch vụ</h3>
-                <p>Bố cục tự động chuyển thành một cột khi xem trên màn hình nhỏ.</p>
-            </section>
-        </main>
-
-        <footer class="footer" id="contact">
-            <p>Footer — © 2026 CSS Grid Layout</p>
-        </footer>
-    </div>
+        <h2>Thử thay đổi giá trị</h2>
+        <p>Trong file <code>style.css</code>, sửa <code>flex-grow: 1</code> thành <code>flex-grow: 2</code> để Item 2 nhận phần không gian lớn hơn.</p>
+    </main>
 </body>
 </html>
