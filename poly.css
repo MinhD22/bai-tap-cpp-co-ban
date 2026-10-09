@@ -1,0 +1,93 @@
+header {
+    position: relative;
+    min-height: 190px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background: linear-gradient(110deg, #337ab7, #173b59);
+    color: white;
+}
+.header-object {
+    height: 185px;
+    max-width: 48%;
+    object-fit: cover;
+    opacity: 0.95;
+}
+.shopping-mall {
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    z-index: 1;
+    font-variant: small-caps;
+}
+.shopping-mall > h1 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 42px;
+    color: white;
+    letter-spacing: 0.3px;
+    text-shadow: 0 0 2px black;
+    padding-bottom: 6px;
+    border-bottom: 1px dotted #ddd;
+    margin: 0;
+}
+.shopping-mall > h5 {
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+}
+.poly-cart {
+    margin-top: 5px;
+}
+.poly-cart ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-variant: small-caps;
+}
+.poly-cart .panel-heading strong {
+    font-variant: small-caps;
+    font-size: larger;
+    text-shadow: 0 0 2px darkgray;
+}
+.poly-prod {
+    text-align: center;
+    padding: 5px;
+}
+.poly-prod .panel-body img {
+    height: 150px;
+    max-width: 95%;
+    object-fit: contain;
+}
+.poly-prod .panel {
+    height: 245px;
+}
+.poly-prod .panel-body {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.poly-prod .panel-footer {
+    font-weight: bold;
+    color: #337ab7;
+}
+footer {
+    margin-top: 15px;
+}
+footer p {
+    margin: 0;
+}
+@media (max-width: 767px) {
+    .shopping-mall {
+        left: 15px;
+        bottom: 18px;
+    }
+    .shopping-mall > h1 {
+        font-size: 28px;
+    }
+    .shopping-mall > h5 {
+        font-size: 11px;
+    }
+    .header-object {
+        height: 185px;
+        max-width: 55%;
+    }
+}
