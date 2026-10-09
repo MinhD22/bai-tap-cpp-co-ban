@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Grid Layout</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Flexbox Layout</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1>Header</h1>
-            <p>Trang web sử dụng CSS Grid</p>
-        </header>
-
-        <nav class="sidebar" aria-label="Menu phụ">
-            <h2>Sidebar</h2>
-            <ul>
-                <li><a href="#home">Trang chủ</a></li>
-                <li><a href="#news">Tin tức</a></li>
-                <li><a href="#services">Dịch vụ</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
-            </ul>
-        </nav>
-
-        <main class="content" id="home">
-            <h2>Nội dung chính</h2>
-            <p>Đây là khu vực nội dung chính của trang web. CSS Grid giúp sắp xếp Header, Sidebar, Main Content và Footer thành bố cục rõ ràng.</p>
-
-            <section id="news">
-                <h3>Tin tức mới</h3>
-                <p>Bạn có thể đặt bài viết, hình ảnh hoặc thông tin quan trọng tại khu vực này.</p>
-            </section>
-
-            <section id="services">
-                <h3>Dịch vụ</h3>
-                <p>Bố cục tự động chuyển thành một cột khi xem trên màn hình nhỏ.</p>
-            </section>
-        </main>
-
-        <footer class="footer" id="contact">
-            <p>Footer — © 2026 CSS Grid Layout</p>
-        </footer>
-    </div>
+  <header class="header">
+    <h1>Website của tôi</h1>
+    <p>Bố cục responsive với CSS Flexbox</p>
+  </header>
+  <nav class="navigation" aria-label="Điều hướng chính">
+    <a href="#home">Trang chủ</a>
+    <a href="#news">Tin tức</a>
+    <a href="#services">Dịch vụ</a>
+    <a href="#about">Giới thiệu</a>
+    <a href="#contact">Liên hệ</a>
+  </nav>
+  <div class="layout" id="home">
+    <main class="main-content">
+      <h2>Nội dung chính</h2>
+      <p>Đây là khu vực nội dung chính. Flexbox giúp nội dung và sidebar nằm cạnh nhau trên màn hình lớn.</p>
+      <section id="news">
+        <h3>Tin tức mới</h3>
+        <p>Cập nhật những thông tin mới nhất tại đây.</p>
+      </section>
+      <section id="services">
+        <h3>Dịch vụ</h3>
+        <p>Giới thiệu các dịch vụ hoặc nội dung nổi bật của website.</p>
+      </section>
+    </main>
+    <aside class="sidebar">
+      <h2>Sidebar</h2>
+      <p>Khu vực nội dung phụ.</p>
+      <div class="side-card">Tin nổi bật 1</div>
+      <div class="side-card">Tin nổi bật 2</div>
+      <div class="side-card">Quảng cáo</div>
+    </aside>
+  </div>
+  <footer class="footer" id="contact">
+    <p>Footer — © 2026 Website của tôi</p>
+  </footer>
 </body>
 </html>

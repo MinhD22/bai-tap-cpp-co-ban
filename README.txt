@@ -1,22 +1,23 @@
-BÀI THỰC HÀNH: CSS GRID LAYOUT RESPONSIVE
+BÀI THỰC HÀNH: RESPONSIVE LAYOUT VỚI CSS FLEXBOX
 
-Tệp gồm:
-- index.html: cấu trúc Header, Sidebar, Main Content và Footer.
-- style.css: bố cục CSS Grid và Media Query.
+Tệp:
+- index.html
+- style.css
 
 Cách chạy:
-1. Giải nén file ZIP.
+1. Giải nén ZIP.
 2. Mở thư mục bằng Visual Studio Code.
-3. Mở index.html bằng trình duyệt hoặc dùng Live Server.
-4. Thử thu nhỏ cửa sổ trình duyệt xuống dưới 768px để kiểm tra giao diện mobile.
+3. Mở index.html bằng Chrome hoặc dùng Live Server.
+4. Thu nhỏ cửa sổ trình duyệt để kiểm tra giao diện mobile.
 
-Yêu cầu đã thực hiện:
-- CSS Grid với 2 cột theo tỷ lệ 1fr 3fr trên desktop.
-- Dùng grid-template-areas để sắp xếp Header, Sidebar, Content và Footer.
-- Dưới hoặc bằng 768px, bố cục chuyển thành một cột.
-- Có đủ index.html và style.css.
+Nội dung:
+- Header, Navigation, Main Content, Sidebar và Footer.
+- CSS Flexbox sắp xếp menu và vùng nội dung.
+- Media Query tại max-width: 768px chuyển menu và nội dung thành bố cục dọc.
 
-Cách nộp:
-1. Chụp ảnh trang trên trình duyệt bằng Win + Shift + S.
-2. Đưa index.html và style.css lên GitHub: repository -> Add file -> Upload files -> Commit changes.
-3. Sao chép link repository và dán vào CodeGym.
+Nộp GitHub:
+1. Mở repository.
+2. Chọn Add file -> Upload files.
+3. Tải index.html và style.css lên.
+4. Chọn Commit changes.
+5. Sao chép link repository để dán vào CodeGym.
