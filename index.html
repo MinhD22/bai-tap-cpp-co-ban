@@ -3,34 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bố cục với display</title>
+    <title>Responsive Navbar</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>Bố cục trang web với display</h1>
-
-    <nav>
-        <a href="#">Trang chủ</a>
-        <a href="#">Giới thiệu</a>
-        <a href="#">Dịch vụ</a>
-        <a href="#">Liên hệ</a>
+    <nav class="navbar">
+        <div class="logo">MyWebsite</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+        <button class="menu-icon" type="button" aria-label="Mở menu"
+                aria-controls="navLinks" aria-expanded="false">☰</button>
     </nav>
-
-    <section>
-        <div class="box">
-            <h2>Cột 1</h2>
-            <p>Nội dung giới thiệu cột thứ nhất.</p>
-        </div><div class="box">
-            <h2>Cột 2</h2>
-            <p>Nội dung giới thiệu cột thứ hai.</p>
-        </div><div class="box">
-            <h2>Cột 3</h2>
-            <p>Nội dung giới thiệu cột thứ ba.</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>Bản quyền &copy; 2026</p>
-    </footer>
+    <main>
+        <h1>Responsive Navbar</h1>
+        <p>Thay đổi kích thước cửa sổ để kiểm tra menu trên desktop và mobile.</p>
+    </main>
 </body>
 </html>
