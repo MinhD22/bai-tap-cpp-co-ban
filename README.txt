@@ -1,13 +1,14 @@
-BÀI THỰC HÀNH: SỬ DỤNG BOOTSTRAP TẠO BỐ CỤC TRANG WEB
+BÀI THỰC HÀNH: BOOTSTRAP FORMS VÀ CAROUSEL
 
-Các tệp:
-- layout.html: cấu trúc trang và các thành phần Bootstrap 3.
-- poly.css: định dạng header, giỏ hàng và sản phẩm.
+Tệp trong bài:
+- index.html: trang đăng ký, carousel quảng bá, form và kiểm tra dữ liệu cơ bản.
+- style.css: một ít CSS bổ sung cho ảnh carousel và giao diện responsive.
 
 Cách chạy:
 1. Giải nén ZIP.
 2. Mở thư mục bằng Visual Studio Code.
-3. Mở layout.html bằng trình duyệt (hoặc dùng Live Server).
-4. Cần có Internet để tải Bootstrap, jQuery và ảnh minh họa từ CDN.
+3. Mở index.html bằng trình duyệt hoặc chạy bằng Live Server.
+4. Cần có Internet để tải Bootstrap 5.3.3 và ảnh minh họa từ Unsplash.
 
-Lưu ý: Bài sử dụng Bootstrap 3.3.7 theo đúng nội dung hướng dẫn.
+Lưu ý:
+Đây là giao diện frontend minh họa. Form có kiểm tra trường bắt buộc, email, độ dài mật khẩu và xác nhận mật khẩu nhưng chưa lưu tài khoản vào máy chủ.
