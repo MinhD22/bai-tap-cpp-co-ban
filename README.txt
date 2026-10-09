@@ -1,24 +1,22 @@
-BÀI THỰC HÀNH: MEDIA QUERY - IMAGE GALLERY
+BÀI THỰC HÀNH: grid-template-columns
 
-Tệp:
-- index.html: cấu trúc trang Gallery.
-- style.css: định dạng và Media Query.
+Tệp trong thư mục:
+- index.html: chứa đầy đủ hai ví dụ.
+- style.css: định dạng Grid và kích thước cột.
 
 Cách chạy:
-1. Giải nén file ZIP.
+1. Giải nén ZIP.
 2. Mở thư mục bằng Visual Studio Code.
-3. Mở index.html bằng trình duyệt hoặc dùng Live Server.
+3. Mở index.html trong trình duyệt.
 
-Quy tắc responsive:
-- Trên 700px: 4 ảnh mỗi dòng.
-- Từ 500px đến 700px: 2 ảnh mỗi dòng.
-- Dưới 500px: 1 ảnh mỗi dòng.
+Kiểm tra:
+- Ví dụ 1: 3 cột bằng nhau, 6 ô hiển thị thành 2 hàng.
+- Ví dụ 2: cột 1 rộng 100px, cột 2 rộng 200px, cột 3 chiếm phần không gian còn lại.
 
-Nộp GitHub:
-1. Mở repository GitHub của bạn.
-2. Chọn Add file -> Upload files.
-3. Tải index.html và style.css lên.
-4. Chọn Commit changes.
-5. Sao chép link repository để nộp CodeGym.
+Chụp ảnh nộp bài:
+1. Mở trang trên trình duyệt ở kích thước cửa sổ đủ rộng để thấy cả hai ví dụ.
+2. Nhấn Win + Shift + S.
+3. Kéo chọn vùng có cả hai ví dụ.
+4. Lưu ảnh dạng PNG/JPG và tải lên CodeGym.
 
-Ảnh demo lấy từ picsum.photos nên cần kết nối Internet để hiển thị.
+Ghi chú: Ở màn hình hẹp, ví dụ 2 giảm kích thước cột để dễ xem.

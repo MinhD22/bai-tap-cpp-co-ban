@@ -3,47 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Image Gallery</title>
+  <title>Thực hành grid-template-columns</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="container">
-    <h1>Image Gallery</h1>
-    <p class="description">Gallery thay đổi số cột theo kích thước màn hình.</p>
+  <main>
+    <h1>Thực hành thuộc tính grid-template-columns</h1>
 
-    <section class="gallery" aria-label="Image gallery">
-      <figure class="gallery-item">
-        <img src="https://picsum.photos/id/1015/600/400" alt="Phong cảnh núi và hồ">
-        <figcaption>Mountain Lake</figcaption>
-      </figure>
-      <figure class="gallery-item">
-        <img src="https://picsum.photos/id/1016/600/400" alt="Rừng cây">
-        <figcaption>Forest</figcaption>
-      </figure>
-      <figure class="gallery-item">
-        <img src="https://picsum.photos/id/1025/600/400" alt="Chú chó">
-        <figcaption>Lovely Dog</figcaption>
-      </figure>
-      <figure class="gallery-item">
-        <img src="https://picsum.photos/id/1035/600/400" alt="Phong cảnh biển">
-        <figcaption>Ocean View</figcaption>
-      </figure>
-      <figure class="gallery-item">
-        <img src="https://picsum.photos/id/1040/600/400" alt="Bờ biển">
-        <figcaption>Coastline</figcaption>
-      </figure>
-      <figure class="gallery-item">
-        <img src="https://picsum.photos/id/106/600/400" alt="Thác nước">
-        <figcaption>Waterfall</figcaption>
-      </figure>
-      <figure class="gallery-item">
-        <img src="https://picsum.photos/id/1069/600/400" alt="Thiên nhiên">
-        <figcaption>Nature</figcaption>
-      </figure>
-      <figure class="gallery-item">
-        <img src="https://picsum.photos/id/1074/600/400" alt="Dãy núi">
-        <figcaption>Mountains</figcaption>
-      </figure>
+    <section class="example">
+      <h2>Ví dụ 1: Ba cột bằng nhau</h2>
+      <div class="grid-container grid-equal">
+        <div>Ô 1</div>
+        <div>Ô 2</div>
+        <div>Ô 3</div>
+        <div>Ô 4</div>
+        <div>Ô 5</div>
+        <div>Ô 6</div>
+      </div>
+    </section>
+
+    <section class="example">
+      <h2>Ví dụ 2: Các cột có kích thước khác nhau</h2>
+      <div class="grid-container grid-different">
+        <div>Cột 1</div>
+        <div>Cột 2</div>
+        <div>Cột 3</div>
+        <div>Cột 1</div>
+        <div>Cột 2</div>
+        <div>Cột 3</div>
+      </div>
     </section>
   </main>
 </body>
