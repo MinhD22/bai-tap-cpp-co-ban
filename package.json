@@ -1,8 +1,8 @@
 {
-  "name": "thuc-hanh-sass",
+  "name": "responsive-grid-sass",
   "version": "1.0.0",
   "private": true,
-  "description": "Thực hành Node.js, npm và biên dịch SCSS bằng Sass CLI",
+  "description": "Refactor CSS thành SCSS cho bài responsive-grid của CodeGym",
   "scripts": {
     "sass:build": "sass scss/:css/",
     "sass:watch": "sass --watch scss/:css/"

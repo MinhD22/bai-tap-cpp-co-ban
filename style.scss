@@ -1,109 +1,192 @@
-// Biến màu dùng chung
-$primary: #2563eb;
-$dark: #14213d;
-$light: #f4f7fb;
-$accent: #22d3ee;
+// Biến màu giúp dễ dàng thay đổi giao diện
+$purple: #9933cc;
+$blue: #33b5e5;
+$footer-blue: #0099cc;
+$grid-border: #d2d2d2;
+$breakpoint-tablet: 600px;
+$breakpoint-desktop: 900px;
 
-// Có thể lồng selector trong SCSS
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  padding: 8px;
   font-family: Arial, sans-serif;
-  color: $dark;
-  background: $light;
-  line-height: 1.6;
+  color: #333;
 }
 
-.navbar {
+.demo {
+  position: relative;
+  width: 100%;
+  min-height: 370px;
+}
+
+.grid-container {
+  position: absolute;
+  inset: 0 0 auto;
+  width: auto;
+  opacity: .9;
+
+  &--guide {
+    opacity: .1;
+    pointer-events: none;
+  }
+}
+
+.grid-wrapper {
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem 6%;
-  color: white;
-  background: $dark;
+  overflow: auto;
+  width: 100%;
 
-  .brand {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: $accent;
+  &--header {
+    height: 90px;
   }
 
-  a {
-    color: white;
-    text-decoration: none;
+  &--body {
+    height: 230px;
+  }
 
-    &:hover {
-      color: $accent;
+  &--footer {
+    height: 50px;
+  }
+
+  &--guide {
+    height: 370px;
+  }
+}
+
+.grid-content {
+  flex: 0 0 8.333333%;
+  min-width: 0;
+  height: 100%;
+  margin: 0;
+  border-right: 1px solid grey;
+  background: #f1f1f1;
+
+  &--header {
+    flex-basis: 100%;
+    border-right-color: transparent;
+    background: $purple;
+  }
+
+  &--footer {
+    flex-basis: 100%;
+    border-right-color: transparent;
+    background: $footer-blue;
+  }
+}
+
+.sidebar {
+  flex-basis: 25%;
+  padding-top: 15px;
+  border: 0;
+  background: #fff;
+
+  &__item {
+    width: 100%;
+    height: 15%;
+    margin-bottom: 10px;
+    background: $blue;
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
 
-.hero {
-  padding: 4rem 6%;
-  text-align: center;
-  color: white;
-  background: linear-gradient(135deg, $primary, $dark);
+.empty {
+  border: 0;
+  background: #fff;
+}
 
-  h1 {
-    margin-top: 0;
-    font-size: clamp(2rem, 5vw, 3.5rem);
-  }
+.right-panel {
+  flex-basis: 25%;
+  padding-top: 15px;
+  border: 0;
+  background: #fff;
 
-  p {
-    max-width: 650px;
-    margin: 1rem auto;
-  }
-
-  .button {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.75rem 1.25rem;
-    border-radius: 0.5rem;
-    color: $dark;
-    background: white;
-    text-decoration: none;
-    font-weight: 700;
+  &__block {
+    width: 100%;
+    height: 92%;
+    background: $blue;
   }
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
-  max-width: 1100px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+.guide-column {
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
 
-  .card {
-    padding: 1.5rem;
-    border-radius: 1rem;
-    background: white;
-    box-shadow: 0 8px 24px rgb(20 33 61 / 8%);
-
-    h2 {
-      color: $primary;
-    }
+  & + & {
+    border-left: 0;
   }
 }
 
-footer {
-  padding: 1.5rem;
-  text-align: center;
-  color: white;
-  background: $dark;
+.hint {
+  margin-top: 390px;
+  font-size: 14px;
+  color: #444;
 }
 
-@media (max-width: 700px) {
-  .navbar {
-    align-items: flex-start;
-    flex-direction: column;
+// Responsive: thay đổi cách hiển thị theo độ rộng màn hình
+@media (min-width: $breakpoint-tablet) {
+  .grid-wrapper--body {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
-  .cards {
-    grid-template-columns: 1fr;
+  .grid-content {
+    width: auto;
+  }
+
+  .sidebar {
+    grid-column: span 3;
+  }
+
+  .empty {
+    grid-column: span 1;
+  }
+
+  .right-panel {
+    grid-column: span 3;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .demo {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .grid-wrapper--header {
+    height: 100px;
+  }
+
+  .grid-wrapper--body {
+    height: 270px;
+  }
+
+  .grid-wrapper--footer {
+    height: 60px;
+  }
+}
+
+@media (max-width: 599px) {
+  .grid-wrapper--body {
+    height: 230px;
+  }
+
+  .sidebar {
+    flex-basis: 25%;
+  }
+
+  .right-panel {
+    flex-basis: 25%;
+  }
+
+  .hint {
+    line-height: 1.5;
   }
 }
