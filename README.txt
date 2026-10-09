@@ -1,14 +1,14 @@
-BÀI THỰC HÀNH: BOOTSTRAP FORMS VÀ CAROUSEL
+BÀI THỰC HÀNH: THIẾT KẾ TRANG WEB BẰNG HTML VÀ CSS
 
-Tệp trong bài:
-- index.html: trang đăng ký, carousel quảng bá, form và kiểm tra dữ liệu cơ bản.
-- style.css: một ít CSS bổ sung cho ảnh carousel và giao diện responsive.
+Các tệp:
+- index.html: cấu trúc trang với nav, section, nội dung Web Technology, C Programming, Java và footer.
+- style.css: giao diện, màu sắc, bố cục Flexbox, hiệu ứng hover và responsive.
+- Hình ảnh minh họa được tải từ Unsplash qua Internet.
 
 Cách chạy:
-1. Giải nén ZIP.
-2. Mở thư mục bằng Visual Studio Code.
-3. Mở index.html bằng trình duyệt hoặc chạy bằng Live Server.
-4. Cần có Internet để tải Bootstrap 5.3.3 và ảnh minh họa từ Unsplash.
+1. Giải nén file ZIP.
+2. Mở thư mục trong Visual Studio Code.
+3. Mở index.html bằng trình duyệt hoặc dùng Live Server.
+4. Cần Internet để tải Google Fonts và ảnh minh họa.
 
-Lưu ý:
-Đây là giao diện frontend minh họa. Form có kiểm tra trường bắt buộc, email, độ dài mật khẩu và xác nhận mật khẩu nhưng chưa lưu tài khoản vào máy chủ.
+Có thể đổi nội dung, ảnh và tên khóa học tùy yêu cầu giảng viên.
