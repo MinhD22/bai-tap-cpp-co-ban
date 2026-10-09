@@ -1,22 +1,22 @@
-BÀI THỰC HÀNH: grid-template-columns
+BÀI THỰC HÀNH: CSS GRID LAYOUT RESPONSIVE
 
-Tệp trong thư mục:
-- index.html: chứa đầy đủ hai ví dụ.
-- style.css: định dạng Grid và kích thước cột.
+Tệp gồm:
+- index.html: cấu trúc Header, Sidebar, Main Content và Footer.
+- style.css: bố cục CSS Grid và Media Query.
 
 Cách chạy:
-1. Giải nén ZIP.
+1. Giải nén file ZIP.
 2. Mở thư mục bằng Visual Studio Code.
-3. Mở index.html trong trình duyệt.
+3. Mở index.html bằng trình duyệt hoặc dùng Live Server.
+4. Thử thu nhỏ cửa sổ trình duyệt xuống dưới 768px để kiểm tra giao diện mobile.
 
-Kiểm tra:
-- Ví dụ 1: 3 cột bằng nhau, 6 ô hiển thị thành 2 hàng.
-- Ví dụ 2: cột 1 rộng 100px, cột 2 rộng 200px, cột 3 chiếm phần không gian còn lại.
+Yêu cầu đã thực hiện:
+- CSS Grid với 2 cột theo tỷ lệ 1fr 3fr trên desktop.
+- Dùng grid-template-areas để sắp xếp Header, Sidebar, Content và Footer.
+- Dưới hoặc bằng 768px, bố cục chuyển thành một cột.
+- Có đủ index.html và style.css.
 
-Chụp ảnh nộp bài:
-1. Mở trang trên trình duyệt ở kích thước cửa sổ đủ rộng để thấy cả hai ví dụ.
-2. Nhấn Win + Shift + S.
-3. Kéo chọn vùng có cả hai ví dụ.
-4. Lưu ảnh dạng PNG/JPG và tải lên CodeGym.
-
-Ghi chú: Ở màn hình hẹp, ví dụ 2 giảm kích thước cột để dễ xem.
+Cách nộp:
+1. Chụp ảnh trang trên trình duyệt bằng Win + Shift + S.
+2. Đưa index.html và style.css lên GitHub: repository -> Add file -> Upload files -> Commit changes.
+3. Sao chép link repository và dán vào CodeGym.
