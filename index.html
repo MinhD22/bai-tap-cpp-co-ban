@@ -1,113 +1,36 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu Dropdown Dọc</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      padding: 40px;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f3f4f6;
-    }
-
-    h1 {
-      margin: 0 0 24px;
-      color: #222;
-      font-size: 24px;
-    }
-
-    #menu,
-    #menu ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    #menu {
-      width: 160px;
-    }
-
-    #menu li {
-      position: relative;
-      width: 160px;
-      height: 36px;
-      padding: 0 20px;
-      background-color: #111;
-      line-height: 36px;
-      cursor: pointer;
-    }
-
-    #menu li:hover {
-      background-color: #333;
-    }
-
-    #menu a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      white-space: nowrap;
-    }
-
-    #menu ul ul {
-      position: absolute;
-      top: 0;
-      left: 160px;
-      visibility: hidden;
-      z-index: 10;
-    }
-
-    #menu li:hover > ul {
-      visibility: visible;
-    }
-
-    #menu li:focus-within > ul {
-      visibility: visible;
-    }
-
-    .note {
-      margin-top: 24px;
-      color: #555;
-      font-size: 14px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục với display</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Menu Dropdown Dọc</h1>
+    <h1>Bố cục trang web với display</h1>
 
-  <div id="menu">
-    <ul>
-      <li><a href="#">Trang chủ</a></li>
-      <li>
-        <a href="#">Sản phẩm ▸</a>
-        <ul>
-          <li><a href="#">Laptop</a></li>
-          <li>
-            <a href="#">Điện thoại ▸</a>
-            <ul>
-              <li><a href="#">Android</a></li>
-              <li><a href="#">iPhone</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Phụ kiện</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Dịch vụ ▸</a>
-        <ul>
-          <li><a href="#">Bảo hành</a></li>
-          <li><a href="#">Sửa chữa</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Liên hệ</a></li>
-    </ul>
-  </div>
+    <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Giới thiệu</a>
+        <a href="#">Dịch vụ</a>
+        <a href="#">Liên hệ</a>
+    </nav>
 
-  <p class="note">Di chuột vào “Sản phẩm” hoặc “Dịch vụ” để xem menu con.</p>
+    <section>
+        <div class="box">
+            <h2>Cột 1</h2>
+            <p>Nội dung giới thiệu cột thứ nhất.</p>
+        </div><div class="box">
+            <h2>Cột 2</h2>
+            <p>Nội dung giới thiệu cột thứ hai.</p>
+        </div><div class="box">
+            <h2>Cột 3</h2>
+            <p>Nội dung giới thiệu cột thứ ba.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Bản quyền &copy; 2026</p>
+    </footer>
 </body>
 </html>
