@@ -1,23 +1,17 @@
-BÀI THỰC HÀNH: RESPONSIVE LAYOUT VỚI CSS FLEXBOX
+BÀI THỰC HÀNH: BOOTSTRAP NAVBAR
 
 Tệp:
 - index.html
-- style.css
 
 Cách chạy:
 1. Giải nén ZIP.
-2. Mở thư mục bằng Visual Studio Code.
-3. Mở index.html bằng Chrome hoặc dùng Live Server.
-4. Thu nhỏ cửa sổ trình duyệt để kiểm tra giao diện mobile.
-
-Nội dung:
-- Header, Navigation, Main Content, Sidebar và Footer.
-- CSS Flexbox sắp xếp menu và vùng nội dung.
-- Media Query tại max-width: 768px chuyển menu và nội dung thành bố cục dọc.
+2. Mở index.html bằng Chrome hoặc VS Code.
+3. Cần kết nối Internet để tải Bootstrap qua CDN.
+4. Kiểm tra menu Services (dropdown) và thu nhỏ cửa sổ để thử menu mobile.
 
 Nộp GitHub:
-1. Mở repository.
+1. Mở repository dành cho bài tập HTML/CSS.
 2. Chọn Add file -> Upload files.
-3. Tải index.html và style.css lên.
+3. Tải index.html lên.
 4. Chọn Commit changes.
-5. Sao chép link repository để dán vào CodeGym.
+5. Sao chép link repository và dán vào CodeGym.
