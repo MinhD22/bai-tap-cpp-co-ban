@@ -1,91 +1,38 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Simple Web Development Template</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thực hành Sass CLI</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar background">
-        <ul class="nav-list">
-            <li class="logo"><a href="#top"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=220&q=80" alt="Logo công nghệ"></a></li>
-            <li><a href="#web">Web Technology</a></li>
-            <li><a href="#program">C Programming</a></li>
-            <li><a href="#course">Courses</a></li>
-        </ul>
-        <form class="rightNav" role="search" onsubmit="return false;">
-            <input type="search" name="search" id="search" placeholder="Tìm kiếm..." aria-label="Tìm kiếm">
-            <button class="btn btn-sm" type="submit">Search</button>
-        </form>
-    </nav>
+  <nav class="navbar">
+    <div class="brand">SASS LAB</div>
+    <a href="#features">Nội dung thực hành</a>
+  </nav>
 
-    <main id="top">
-        <section class="firstsection">
-            <div class="box-main">
-                <div class="firstHalf">
-                    <p class="eyebrow">HỌC LẬP TRÌNH TỪ CƠ BẢN</p>
-                    <h1 class="text-big" id="web">Web Technology</h1>
-                    <p class="text-small">HTML (HyperText Markup Language) được dùng để xây dựng cấu trúc trang web. Kết hợp HTML với CSS giúp trình bày văn bản, hình ảnh và nội dung rõ ràng, đẹp mắt trên nhiều thiết bị.</p>
-                    <a href="#course" class="btn btn-light">Khám phá khóa học</a>
-                </div>
-                <div class="hero-visual">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=85" alt="Máy tính và không gian lập trình">
-                </div>
-            </div>
-        </section>
+  <header class="hero">
+    <h1>SCSS sang CSS bằng Sass CLI</h1>
+    <p>Thực hành biến SCSS, selector lồng nhau, responsive và biên dịch tự động với npm.</p>
+    <a class="button" href="#features">Bắt đầu tìm hiểu</a>
+  </header>
 
-        <section class="secondsection">
-            <div class="box-main">
-                <div class="secondHalf">
-                    <div class="code-icon" aria-hidden="true">&lt;/&gt;</div>
-                </div>
-                <div class="second-copy">
-                    <p class="eyebrow">NỀN TẢNG LẬP TRÌNH</p>
-                    <h2 class="text-big" id="program">C Programming</h2>
-                    <p class="text-small">C là ngôn ngữ lập trình thủ tục, nổi bật bởi tốc độ và khả năng làm việc gần với bộ nhớ. C thường được dùng trong lập trình hệ thống, hệ điều hành và trình biên dịch.</p>
-                    <a href="#course" class="btn btn-outline">Tìm hiểu thêm</a>
-                </div>
-            </div>
-        </section>
+  <main class="cards" id="features">
+    <section class="card">
+      <h2>1. Node.js và npm</h2>
+      <p>Node.js cung cấp môi trường chạy JavaScript; npm giúp quản lý các package của dự án.</p>
+    </section>
+    <section class="card">
+      <h2>2. Sass CLI</h2>
+      <p>Sass biên dịch tệp SCSS thành CSS để trình duyệt có thể sử dụng.</p>
+    </section>
+    <section class="card">
+      <h2>3. Watch mode</h2>
+      <p>Khi SCSS thay đổi, Sass tự động biên dịch lại CSS tương ứng.</p>
+    </section>
+  </main>
 
-        <section class="section" id="course">
-            <div class="paras">
-                <p class="eyebrow">PHÁT TRIỂN SỰ NGHIỆP</p>
-                <h2 class="sectionTag text-big">Java Programming</h2>
-                <p class="sectionSubTag text-small">Java là ngôn ngữ lập trình hướng đối tượng phổ biến. Mã nguồn Java được biên dịch thành bytecode và chạy trên Java Virtual Machine (JVM), giúp chương trình hoạt động trên nhiều nền tảng.</p>
-                <ul class="course-points">
-                    <li>Học theo lộ trình rõ ràng</li>
-                    <li>Thực hành qua dự án nhỏ</li>
-                    <li>Xây dựng nền tảng vững chắc</li>
-                </ul>
-            </div>
-            <div class="thumbnail">
-                <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=85" alt="Mã lập trình trên màn hình">
-            </div>
-        </section>
-
-        <section class="course-cards" aria-label="Điểm nổi bật">
-            <article class="feature-card">
-                <span class="feature-number">01</span>
-                <h3>Học thực hành</h3>
-                <p>Luyện tập với ví dụ ngắn và dễ theo dõi.</p>
-            </article>
-            <article class="feature-card">
-                <span class="feature-number">02</span>
-                <h3>Kiến thức nền tảng</h3>
-                <p>Hiểu cách HTML, CSS và ngôn ngữ lập trình hoạt động.</p>
-            </article>
-            <article class="feature-card">
-                <span class="feature-number">03</span>
-                <h3>Responsive</h3>
-                <p>Giao diện thích ứng với máy tính, máy tính bảng và điện thoại.</p>
-            </article>
-        </section>
-    </main>
-
-    <footer class="background">
-        <p class="text-footer">Copyright © 2026 — All rights reserved.</p>
-    </footer>
+  <footer>Thực hành Node.js · npm · Sass</footer>
 </body>
 </html>

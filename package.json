@@ -1,0 +1,13 @@
+{
+  "name": "thuc-hanh-sass",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Thực hành Node.js, npm và biên dịch SCSS bằng Sass CLI",
+  "scripts": {
+    "sass:build": "sass scss/:css/",
+    "sass:watch": "sass --watch scss/:css/"
+  },
+  "devDependencies": {
+    "sass": "^1.83.0"
+  }
+}

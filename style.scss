@@ -1,0 +1,109 @@
+// Biến màu dùng chung
+$primary: #2563eb;
+$dark: #14213d;
+$light: #f4f7fb;
+$accent: #22d3ee;
+
+// Có thể lồng selector trong SCSS
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: $dark;
+  background: $light;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 6%;
+  color: white;
+  background: $dark;
+
+  .brand {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $accent;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.hero {
+  padding: 4rem 6%;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, $primary, $dark);
+
+  h1 {
+    margin-top: 0;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+  }
+
+  p {
+    max-width: 650px;
+    margin: 1rem auto;
+  }
+
+  .button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    color: $dark;
+    background: white;
+    text-decoration: none;
+    font-weight: 700;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  .card {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: white;
+    box-shadow: 0 8px 24px rgb(20 33 61 / 8%);
+
+    h2 {
+      color: $primary;
+    }
+  }
+}
+
+footer {
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  background: $dark;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
