@@ -1,19 +1,18 @@
-BÀI THỰC HÀNH: RESPONSIVE NAVBAR
+BÀI THỰC HÀNH: LANDING PAGE RESPONSIVE
 
-Các file:
-- index.html: cấu trúc thanh điều hướng
-- style.css: định dạng desktop/mobile bằng Flexbox và Media Queries
-- script.js: mở/đóng menu khi nhấn biểu tượng ☰
+File gồm:
+- index.html
+- style.css
 
 Cách chạy:
-1. Giải nén ZIP.
+1. Giải nén file ZIP.
 2. Mở thư mục trong Visual Studio Code.
 3. Mở index.html bằng trình duyệt hoặc dùng Live Server.
-4. Thu nhỏ cửa sổ xuống 768px hoặc thấp hơn rồi nhấn ☰ để kiểm tra.
+4. Thu nhỏ cửa sổ để kiểm tra bố cục mobile; dịch vụ và đánh giá sẽ xếp thành một cột.
 
-Cách nộp GitHub:
-1. Mở repository của bạn.
+Đưa lên GitHub:
+1. Mở repository GitHub của bạn.
 2. Chọn Add file > Upload files.
-3. Tải lên index.html, style.css và script.js.
+3. Tải lên index.html và style.css.
 4. Nhấn Commit changes.
-5. Sao chép link repository và dán vào ô nộp bài trên CodeGym.
+5. Sao chép link repository và dán vào ô nộp bài CodeGym.

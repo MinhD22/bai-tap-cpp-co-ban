@@ -3,25 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
+    <title>Landing Page Responsive - MyBrand</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">MyWebsite</div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#">Trang chủ</a></li>
-            <li><a href="#">Giới thiệu</a></li>
-            <li><a href="#">Dịch vụ</a></li>
-            <li><a href="#">Liên hệ</a></li>
-        </ul>
-        <button class="menu-icon" type="button" aria-label="Mở menu"
-                aria-controls="navLinks" aria-expanded="false">☰</button>
-    </nav>
+    <header class="header">
+        <a class="logo" href="#">MyBrand</a>
+        <nav class="nav" aria-label="Điều hướng chính">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#services">Dịch vụ</a></li>
+                <li><a href="#testimonials">Đánh giá</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <h1>Responsive Navbar</h1>
-        <p>Thay đổi kích thước cửa sổ để kiểm tra menu trên desktop và mobile.</p>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">GIẢI PHÁP SỐ CHO DOANH NGHIỆP</p>
+                <h1>Chào mừng đến với <span>MyBrand</span></h1>
+                <p class="hero-description">Giải pháp số giúp doanh nghiệp của bạn phát triển mạnh mẽ trong thời đại công nghệ.</p>
+                <a href="#services" class="btn">Tìm hiểu thêm <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+
+        <section id="services" class="services section">
+            <div class="section-heading">
+                <p class="eyebrow">CHÚNG TÔI CÓ THỂ GIÚP GÌ?</p>
+                <h2>Dịch vụ của chúng tôi</h2>
+                <p>Giải pháp phù hợp cho từng bước phát triển của bạn.</p>
+            </div>
+            <div class="service-container">
+                <article class="service">
+                    <div class="service-icon" aria-hidden="true">✦</div>
+                    <h3>Thiết kế web</h3>
+                    <p>Website hiện đại, dễ sử dụng và tối ưu trên mọi thiết bị.</p>
+                </article>
+                <article class="service">
+                    <div class="service-icon" aria-hidden="true">⌘</div>
+                    <h3>Phát triển phần mềm</h3>
+                    <p>Ứng dụng theo nhu cầu giúp công việc hiệu quả hơn.</p>
+                </article>
+                <article class="service">
+                    <div class="service-icon" aria-hidden="true">↗</div>
+                    <h3>Marketing số</h3>
+                    <p>Tiếp cận đúng khách hàng và tăng trưởng bền vững.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials section">
+            <div class="section-heading">
+                <p class="eyebrow">PHẢN HỒI TỪ KHÁCH HÀNG</p>
+                <h2>Khách hàng nói gì?</h2>
+            </div>
+            <div class="testimonial-container">
+                <blockquote class="testimonial">
+                    <p>“Dịch vụ tuyệt vời! Đội ngũ hỗ trợ rất nhiệt tình và chuyên nghiệp.”</p>
+                    <footer>— Khách hàng A</footer>
+                </blockquote>
+                <blockquote class="testimonial">
+                    <p>“Tôi rất hài lòng với MyBrand. Website hoạt động tốt trên cả điện thoại và máy tính.”</p>
+                    <footer>— Khách hàng B</footer>
+                </blockquote>
+            </div>
+        </section>
     </main>
+
+    <footer id="contact" class="footer">
+        <p>© 2026 MyBrand. All rights reserved.</p>
+        <a href="mailto:hello@mybrand.example">Liên hệ với chúng tôi</a>
+    </footer>
 </body>
 </html>
